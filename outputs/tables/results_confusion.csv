@@ -1,0 +1,8 @@
+Model,True negatives,False positives,False negatives,True positives,Accuracy
+Logistic Regression,1221,26,26,672,0.974 ± 0.001
+Random Forest,1233,14,29,669,0.978 ± 0.001
+SVM,1221,26,31,667,0.971 ± 0.000
+DistilBERT,1226,21,19,679,0.979 ± 0.002
+BERT,1230,17,21,677,0.980 ± 0.001
+Keyword filter (baseline),1159,88,383,315,0.758
+ProtectAI DeBERTa (off-the-shelf),1232,15,127,571,0.927

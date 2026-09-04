@@ -1,0 +1,81 @@
+{
+  "middleware_health": {
+    "detector": "classical:svm",
+    "status": "ok",
+    "thresholds": {
+      "block": 0.9,
+      "escalate": 0.7,
+      "sanitise": 0.5
+    }
+  },
+  "http_latency": {
+    "n": 200,
+    "mean_ms": 3.15,
+    "median_ms": 2.79,
+    "p95_ms": 4.71,
+    "p99_ms": 8.25,
+    "min_ms": 2.23,
+    "max_ms": 15.52
+  },
+  "inprocess_latency": {
+    "keyword": {
+      "detector": "keyword-baseline",
+      "n": 200,
+      "mean_ms": 0.08,
+      "median_ms": 0.03,
+      "p95_ms": 0.41,
+      "batched_mean_ms_per_item": 0.083
+    },
+    "classical": {
+      "detector": "classical:svm",
+      "n": 200,
+      "mean_ms": 1.94,
+      "median_ms": 1.61,
+      "p95_ms": 3.25,
+      "batched_mean_ms_per_item": 0.405
+    },
+    "transformer": {
+      "detector": "transformer:distilbert",
+      "n": 200,
+      "mean_ms": 38.27,
+      "median_ms": 31.51,
+      "p95_ms": 109.91,
+      "batched_mean_ms_per_item": 141.225
+    }
+  },
+  "over_blocking": [
+    {
+      "set": "held-out benign test set",
+      "n": 1247,
+      "decisions": {
+        "allow": 1221,
+        "escalate": 14,
+        "block": 2,
+        "sanitise": 10
+      },
+      "block_rate": 0.0016,
+      "any_intervention_rate": 0.0209,
+      "mean_ms_per_item": 0.604
+    },
+    {
+      "set": "authored hard negatives",
+      "n": 8,
+      "decisions": {
+        "allow": 8
+      },
+      "block_rate": 0.0,
+      "any_intervention_rate": 0.0,
+      "mean_ms_per_item": 0.697
+    },
+    {
+      "set": "authored matched-domain benign",
+      "n": 8,
+      "decisions": {
+        "allow": 8
+      },
+      "block_rate": 0.0,
+      "any_intervention_rate": 0.0,
+      "mean_ms_per_item": 0.574
+    }
+  ]
+}

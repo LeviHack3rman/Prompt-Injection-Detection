@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+backend/logs/
+middleware/logs/
+data/raw/
+models/
+outputs/screenshots/*.png
+.DS_Store
+.pytest_cache/
+.claude/

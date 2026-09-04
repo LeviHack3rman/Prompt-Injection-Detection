@@ -1,0 +1,8 @@
+Model,"Detection rate, standard test set","Detection rate, adaptive set",Loss (standard − adaptive),Relative loss (%)
+Logistic Regression,0.963,0.925 ± 0.004,0.038,4.0
+Random Forest,0.958,0.823 ± 0.002,0.136,14.1
+SVM,0.956,0.918 ± 0.000,0.038,4.0
+DistilBERT,0.972,0.967 ± 0.016,0.006,0.6
+BERT,0.970,0.973 ± 0.011,-0.003,-0.3
+Keyword filter (baseline),0.451,0.375,0.076,16.9
+ProtectAI DeBERTa (off-the-shelf),0.818,0.926,-0.107,-13.1

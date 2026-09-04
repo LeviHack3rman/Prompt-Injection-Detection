@@ -1,0 +1,8 @@
+Model,Direct injection,Jailbreak,Indirect injection (BIPIA)
+Logistic Regression,0.987,0.933,0.667
+Random Forest,0.978,0.870,0.865
+SVM,0.982,0.889,0.703
+DistilBERT,0.991,0.952,0.730
+BERT,0.989,0.963,0.685
+Keyword filter (baseline),0.447,0.633,0.081
+ProtectAI DeBERTa (off-the-shelf),0.855,0.822,0.243

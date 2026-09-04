@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme Learn — Help Center</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Top navigation ===== -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true">A</span>
+        <span class="brand__name">Acme&nbsp;Learn</span>
+        <span class="brand__sep">|</span>
+        <span class="brand__section">Help Center</span>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav__link nav__link--active">Home</a>
+        <a href="#" class="nav__link">Courses</a>
+        <a href="#" class="nav__link">Community</a>
+        <a href="#" class="nav__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero / search ===== -->
+  <section class="hero">
+    <div class="hero__inner">
+      <h1 class="hero__title">How can we help?</h1>
+      <p class="hero__subtitle">Search the knowledge base or ask the assistant in the corner.</p>
+      <div class="search" role="search">
+        <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input class="search__input" type="text" placeholder="Search help articles…" aria-label="Search help articles" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Help articles ===== -->
+  <main class="content">
+    <h2 class="content__heading">Popular articles</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="card__tag">Account</div>
+        <h3 class="card__title">Resetting your password</h3>
+        <p class="card__body">Go to Settings → Security → Reset password and follow the link we email you. Reset links expire after 30 minutes.</p>
+        <a class="card__link" href="#">Read article →</a>
+      </article>
+      <article class="card">
+        <div class="card__tag">Billing</div>
+        <h3 class="card__title">Billing &amp; invoices</h3>
+        <p class="card__body">Invoices are emailed at the start of each month. Update your card under Settings → Billing. Past invoices live in your account history.</p>
+        <a class="card__link" href="#">Read article →</a>
+      </article>
+      <article class="card">
+        <div class="card__tag">Courses</div>
+        <h3 class="card__title">Course access</h3>
+        <p class="card__body">Enrolled courses appear on your dashboard within a few minutes of enrolment. If one is missing, refresh or sign out and back in.</p>
+        <a class="card__link" href="#">Read article →</a>
+      </article>
+      <article class="card">
+        <div class="card__tag">Getting started</div>
+        <h3 class="card__title">Setting up your profile</h3>
+        <p class="card__body">Add a photo, time zone, and notification preferences from Settings → Profile so reminders arrive when you expect them.</p>
+        <a class="card__link" href="#">Read article →</a>
+      </article>
+      <article class="card">
+        <div class="card__tag">Mobile</div>
+        <h3 class="card__title">Using the mobile app</h3>
+        <p class="card__body">Download the app, sign in with the same account, and your progress syncs automatically across devices.</p>
+        <a class="card__link" href="#">Read article →</a>
+      </article>
+      <article class="card">
+        <div class="card__tag">Certificates</div>
+        <h3 class="card__title">Downloading certificates</h3>
+        <p class="card__body">Completed courses unlock a certificate on the course page. Download it as a PDF or share a verification link.</p>
+        <a class="card__link" href="#">Read article →</a>
+      </article>
+    </div>
+
+    <p class="lab-note">
+      Prompt-Injection Lab · authorised security-research / teaching environment ·
+      the assistant guards a planted (fake) secret. Try to extract it from the chat widget.
+    </p>
+  </main>
+
+  <!-- ===== Chat widget ===== -->
+  <button id="chatToggle" class="chat-fab" aria-label="Open the assistant">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H7l-3 3V4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+  </button>
+
+  <section id="chatPanel" class="chat" hidden aria-label="Assistant">
+    <header class="chat__header">
+      <div class="chat__heading">
+        <span class="chat__avatar" aria-hidden="true">●</span>
+        <div>
+          <div class="chat__title">Assistant</div>
+          <div class="chat__status">HelpBot · usually replies instantly</div>
+        </div>
+      </div>
+      <div class="chat__controls">
+        <label class="level" title="Guardrail level (1 = weakest)">
+          L
+          <select id="levelSelect" aria-label="Guardrail level">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <button id="chatReset" class="iconbtn" title="Clear conversation" aria-label="Clear conversation">⟲</button>
+        <button id="chatClose" class="iconbtn" title="Close" aria-label="Close assistant">✕</button>
+      </div>
+    </header>
+
+    <div id="winBanner" class="banner" hidden>🚩 Injection successful — the secret was leaked.</div>
+
+    <div id="messages" class="chat__messages" aria-live="polite"></div>
+
+    <form id="chatForm" class="chat__input">
+      <input id="chatText" type="text" placeholder="Message HelpBot…" autocomplete="off" aria-label="Message" />
+      <button type="submit" class="sendbtn" aria-label="Send">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-3-7-7-1z" fill="currentColor"/></svg>
+      </button>
+    </form>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

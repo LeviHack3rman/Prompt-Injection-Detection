@@ -1,0 +1,70 @@
+{
+  "seed": 42,
+  "dedup": {
+    "initial": 13906,
+    "exact_duplicates_removed": 781,
+    "near_duplicates_removed": 155,
+    "final": 12970
+  },
+  "n_total": 12970,
+  "n_benign": 8314,
+  "n_malicious": 4656,
+  "by_class": [
+    [
+      "benign",
+      8314
+    ],
+    [
+      "direct_injection",
+      3810
+    ],
+    [
+      "jailbreak",
+      596
+    ],
+    [
+      "indirect_injection",
+      250
+    ]
+  ],
+  "by_channel": [
+    [
+      "user",
+      12511
+    ],
+    [
+      "retrieved",
+      459
+    ]
+  ],
+  "by_split": [
+    [
+      "train",
+      9079
+    ],
+    [
+      "val",
+      1946
+    ],
+    [
+      "test",
+      1945
+    ]
+  ],
+  "sources": [
+    "Lakera/gandalf_ignore_instructions",
+    "authored hard negatives",
+    "authored matched-domain benign",
+    "deepset/prompt-injections",
+    "jackhhao/jailbreak-classification",
+    "microsoft/BIPIA",
+    "microsoft/BIPIA (clean context)",
+    "prompt-injection lab (benign probes)",
+    "prompt-injection lab (chat_log.jsonl)",
+    "prompt-injection lab (payloads)",
+    "xTRam1/safe-guard-prompt-injection"
+  ],
+  "triggers_absent_from_benign": [
+    "system prompt"
+  ]
+}

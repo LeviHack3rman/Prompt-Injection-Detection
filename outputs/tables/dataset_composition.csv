@@ -1,0 +1,43 @@
+source,attack_class,channel,split,n
+Lakera/gandalf_ignore_instructions,direct_injection,user,test,151
+Lakera/gandalf_ignore_instructions,direct_injection,user,train,713
+Lakera/gandalf_ignore_instructions,direct_injection,user,val,135
+authored hard negatives,benign,user,test,8
+authored hard negatives,benign,user,train,37
+authored hard negatives,benign,user,val,9
+authored matched-domain benign,benign,user,test,8
+authored matched-domain benign,benign,user,train,31
+authored matched-domain benign,benign,user,val,10
+deepset/prompt-injections,benign,user,test,53
+deepset/prompt-injections,benign,user,train,289
+deepset/prompt-injections,benign,user,val,56
+deepset/prompt-injections,direct_injection,user,test,34
+deepset/prompt-injections,direct_injection,user,train,189
+deepset/prompt-injections,direct_injection,user,val,37
+jackhhao/jailbreak-classification,benign,user,test,79
+jackhhao/jailbreak-classification,benign,user,train,458
+jackhhao/jailbreak-classification,benign,user,val,100
+jackhhao/jailbreak-classification,jailbreak,user,test,90
+jackhhao/jailbreak-classification,jailbreak,user,train,417
+jackhhao/jailbreak-classification,jailbreak,user,val,89
+microsoft/BIPIA,indirect_injection,retrieved,test,37
+microsoft/BIPIA,indirect_injection,retrieved,train,175
+microsoft/BIPIA,indirect_injection,retrieved,val,38
+microsoft/BIPIA (clean context),benign,retrieved,test,32
+microsoft/BIPIA (clean context),benign,retrieved,train,146
+microsoft/BIPIA (clean context),benign,retrieved,val,31
+prompt-injection lab (benign probes),benign,user,test,1
+prompt-injection lab (benign probes),benign,user,train,5
+prompt-injection lab (benign probes),benign,user,val,2
+prompt-injection lab (chat_log.jsonl),benign,user,test,3
+prompt-injection lab (chat_log.jsonl),benign,user,train,15
+prompt-injection lab (chat_log.jsonl),benign,user,val,3
+prompt-injection lab (payloads),direct_injection,user,test,4
+prompt-injection lab (payloads),direct_injection,user,train,7
+prompt-injection lab (payloads),direct_injection,user,val,1
+xTRam1/safe-guard-prompt-injection,benign,user,test,1063
+xTRam1/safe-guard-prompt-injection,benign,user,train,4839
+xTRam1/safe-guard-prompt-injection,benign,user,val,1036
+xTRam1/safe-guard-prompt-injection,direct_injection,user,test,382
+xTRam1/safe-guard-prompt-injection,direct_injection,user,train,1758
+xTRam1/safe-guard-prompt-injection,direct_injection,user,val,399

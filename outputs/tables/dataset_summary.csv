@@ -1,0 +1,5 @@
+attack_class,test,train,val,total
+benign,1247,5820,1247,8314
+direct_injection,571,2667,572,3810
+indirect_injection,37,175,38,250
+jailbreak,90,417,89,596

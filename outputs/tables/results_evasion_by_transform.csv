@@ -1,0 +1,11 @@
+Evasion transform,Logistic Regression,Random Forest,SVM,DistilBERT,BERT,Keyword filter (baseline),ProtectAI DeBERTa (off-the-shelf)
+base64 wrapping,0.998,0.945,1.000,0.977,1.000,1.000,1.000
+homoglyph,0.871,0.766,0.835,0.994,0.985,0.065,0.923
+leetspeak,0.856,0.616,0.811,0.926,0.916,0.090,0.907
+llm paraphrase,0.961,0.949,0.920,0.971,0.949,0.460,0.985
+payload splitting,0.974,0.972,0.976,0.994,0.993,0.444,0.926
+position shift,0.832,0.648,0.881,0.913,0.942,0.451,0.831
+roleplay wrapping,0.966,0.882,0.958,0.992,0.991,0.451,0.958
+spaced letters,0.925,0.866,0.942,0.975,0.978,0.289,0.929
+translation framing,0.964,0.900,0.953,0.955,0.984,0.451,0.848
+zero width,0.932,0.787,0.903,0.972,0.970,0.115,0.997

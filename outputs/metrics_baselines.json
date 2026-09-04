@@ -1,0 +1,76 @@
+{
+  "KeywordFilter": {
+    "test": {
+      "accuracy": 0.757840616966581,
+      "precision": 0.7816377171215881,
+      "recall": 0.4512893982808023,
+      "f1": 0.5722070844686649,
+      "fpr": 0.07056936647955092,
+      "tp": 315,
+      "fp": 88,
+      "tn": 1159,
+      "fn": 383,
+      "detection_rate": 0.4512893982808023,
+      "roc_auc": 0.6903600159006256,
+      "mean_latency_ms": 0.0443
+    },
+    "detector": "keyword filter (lab TRICK_PATTERNS)",
+    "evasion": {
+      "detection_rate": 0.37505852973310444,
+      "dr_base64_wrapping": 1.0,
+      "dr_homoglyph": 0.06456241032998565,
+      "dr_leetspeak": 0.09038737446197992,
+      "dr_llm_paraphrase": 0.45985401459854014,
+      "dr_payload_splitting": 0.44412607449856734,
+      "dr_position_shift": 0.4512893982808023,
+      "dr_roleplay_wrapping": 0.4512893982808023,
+      "dr_spaced_letters": 0.28924418604651164,
+      "dr_translation_framing": 0.4512893982808023,
+      "dr_zero_width": 0.11461318051575932
+    },
+    "per_class_recall": {
+      "direct_injection": 0.44658493870402804,
+      "jailbreak": 0.6333333333333333,
+      "indirect_injection": 0.08108108108108109
+    }
+  },
+  "OffTheShelfDeBERTa": {
+    "test": {
+      "accuracy": 0.9269922879177378,
+      "precision": 0.9744027303754266,
+      "recall": 0.8180515759312321,
+      "f1": 0.8894080996884736,
+      "fpr": 0.012028869286287089,
+      "tp": 571,
+      "fp": 15,
+      "tn": 1232,
+      "fn": 127,
+      "detection_rate": 0.8180515759312321,
+      "roc_auc": 0.9843050254708722,
+      "mean_latency_ms": 98.352
+    },
+    "detector": "protectai/deberta-v3-base-prompt-injection-v2",
+    "id2label": {
+      "0": "SAFE",
+      "1": "INJECTION"
+    },
+    "evasion": {
+      "detection_rate": 0.9255501794911816,
+      "dr_base64_wrapping": 1.0,
+      "dr_homoglyph": 0.9225251076040172,
+      "dr_leetspeak": 0.9067431850789096,
+      "dr_llm_paraphrase": 0.9854014598540146,
+      "dr_payload_splitting": 0.9255014326647565,
+      "dr_position_shift": 0.830945558739255,
+      "dr_roleplay_wrapping": 0.9584527220630372,
+      "dr_spaced_letters": 0.9287790697674418,
+      "dr_translation_framing": 0.8481375358166189,
+      "dr_zero_width": 0.997134670487106
+    },
+    "per_class_recall": {
+      "direct_injection": 0.8546409807355516,
+      "jailbreak": 0.8222222222222222,
+      "indirect_injection": 0.24324324324324326
+    }
+  }
+}

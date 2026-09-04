@@ -1,0 +1,797 @@
+{
+  "models": {
+    "LogisticRegression": {
+      "test": {
+        "accuracy": 0.9736075407026563,
+        "accuracy_sd": 0.0009694694514982648,
+        "precision": 0.9632335408227118,
+        "precision_sd": 0.002350409256241911,
+        "recall": 0.9632282712511938,
+        "recall_sd": 0.0006753646429670928,
+        "f1": 0.9632295886359614,
+        "f1_sd": 0.0013126978911522586,
+        "fpr": 0.02058273188986902,
+        "fpr_sd": 0.0013630097603829952,
+        "tp": 672.3333333333334,
+        "tp_sd": 0.4714045207910317,
+        "fp": 25.666666666666668,
+        "fp_sd": 1.699673171197595,
+        "tn": 1221.3333333333333,
+        "tn_sd": 1.699673171197595,
+        "fn": 25.666666666666668,
+        "fn_sd": 0.4714045207910317,
+        "detection_rate": 0.9632282712511938,
+        "detection_rate_sd": 0.0006753646429670928,
+        "roc_auc": 0.9961159887837784,
+        "roc_auc_sd": 4.133163163929466e-05,
+        "fit_seconds": 4.3999999999999995,
+        "fit_seconds_sd": 0.5354126134736337
+      },
+      "test_per_seed": [
+        {
+          "accuracy": 0.9722365038560411,
+          "precision": 0.96,
+          "recall": 0.9627507163323782,
+          "f1": 0.9613733905579399,
+          "fpr": 0.022453889334402566,
+          "tp": 672,
+          "fp": 28,
+          "tn": 1219,
+          "fn": 26,
+          "detection_rate": 0.9627507163323782,
+          "roc_auc": 0.996165008053713,
+          "fit_seconds": 5.1
+        },
+        {
+          "accuracy": 0.974293059125964,
+          "precision": 0.9641833810888252,
+          "recall": 0.9641833810888252,
+          "f1": 0.9641833810888252,
+          "fpr": 0.020048115477145148,
+          "tp": 673,
+          "fp": 25,
+          "tn": 1222,
+          "fn": 25,
+          "detection_rate": 0.9641833810888252,
+          "roc_auc": 0.9960639058094729,
+          "fit_seconds": 4.3
+        },
+        {
+          "accuracy": 0.974293059125964,
+          "precision": 0.9655172413793104,
+          "recall": 0.9627507163323782,
+          "f1": 0.9641319942611191,
+          "fpr": 0.019246190858059342,
+          "tp": 672,
+          "fp": 24,
+          "tn": 1223,
+          "fn": 26,
+          "detection_rate": 0.9627507163323782,
+          "roc_auc": 0.9961190524881491,
+          "fit_seconds": 3.8
+        }
+      ],
+      "per_class_recall": {
+        "direct_injection": 0.9871570344424985,
+        "jailbreak": 0.9333333333333332,
+        "indirect_injection": 0.6666666666666666
+      },
+      "best_params": {
+        "C": 1.0
+      },
+      "seeds": [
+        42,
+        1337,
+        2024
+      ],
+      "evasion": {
+        "detection_rate": 0.9251339680557723,
+        "detection_rate_sd": 0.0036411067492685602,
+        "dr_base64_wrapping": 0.9980897803247374,
+        "dr_base64_wrapping_sd": 0.0017868468895768548,
+        "dr_homoglyph": 0.8713534194165472,
+        "dr_homoglyph_sd": 0.0017894105149564863,
+        "dr_leetspeak": 0.8555714968914394,
+        "dr_leetspeak_sd": 0.004435016018888409,
+        "dr_llm_paraphrase": 0.9610705596107056,
+        "dr_llm_paraphrase_sd": 0.0034409089108834385,
+        "dr_payload_splitting": 0.9742120343839543,
+        "dr_payload_splitting_sd": 1.1102230246251565e-16,
+        "dr_position_shift": 0.8323782234957021,
+        "dr_position_shift_sd": 0.019954710998831077,
+        "dr_roleplay_wrapping": 0.9656160458452723,
+        "dr_roleplay_wrapping_sd": 0.0011697658752546193,
+        "dr_spaced_letters": 0.9253875968992248,
+        "dr_spaced_letters_sd": 0.011887445878280348,
+        "dr_translation_framing": 0.9641833810888252,
+        "dr_translation_framing_sd": 0.0023395317505092387,
+        "dr_zero_width": 0.9321872015281758,
+        "dr_zero_width_sd": 0.0029438462287339844
+      }
+    },
+    "RandomForest": {
+      "test": {
+        "accuracy": 0.9777206512425022,
+        "accuracy_sd": 0.0006412437680846459,
+        "precision": 0.9790262245177453,
+        "precision_sd": 0.0013523772480067394,
+        "recall": 0.9584527220630372,
+        "recall_sd": 0.0011697658752546193,
+        "f1": 0.9686294349206142,
+        "f1_sd": 0.0008997104864485539,
+        "fpr": 0.011494252873563218,
+        "fpr_sd": 0.0007560617815413499,
+        "tp": 669.0,
+        "tp_sd": 0.816496580927726,
+        "fp": 14.333333333333334,
+        "fp_sd": 0.9428090415820634,
+        "tn": 1232.6666666666667,
+        "tn_sd": 0.9428090415820634,
+        "fn": 29.0,
+        "fn_sd": 0.816496580927726,
+        "detection_rate": 0.9584527220630372,
+        "detection_rate_sd": 0.0011697658752546193,
+        "roc_auc": 0.9969165730322018,
+        "roc_auc_sd": 8.794360928558202e-05,
+        "fit_seconds": 25.900000000000002,
+        "fit_seconds_sd": 1.6573070526208074
+      },
+      "test_per_seed": [
+        {
+          "accuracy": 0.9778920308483291,
+          "precision": 0.9781021897810219,
+          "recall": 0.9598853868194842,
+          "f1": 0.9689081706435285,
+          "fpr": 0.012028869286287089,
+          "tp": 670,
+          "fp": 15,
+          "tn": 1232,
+          "fn": 28,
+          "detection_rate": 0.9598853868194842,
+          "roc_auc": 0.9969451037791559,
+          "fit_seconds": 28.1
+        },
+        {
+          "accuracy": 0.9784061696658097,
+          "precision": 0.9809384164222874,
+          "recall": 0.9584527220630372,
+          "f1": 0.9695652173913043,
+          "fpr": 0.010425020048115477,
+          "tp": 669,
+          "fp": 13,
+          "tn": 1234,
+          "fn": 29,
+          "detection_rate": 0.9584527220630372,
+          "roc_auc": 0.9967974715247826,
+          "fit_seconds": 25.5
+        },
+        {
+          "accuracy": 0.9768637532133676,
+          "precision": 0.9780380673499268,
+          "recall": 0.9570200573065902,
+          "f1": 0.9674149167270094,
+          "fpr": 0.012028869286287089,
+          "tp": 668,
+          "fp": 15,
+          "tn": 1232,
+          "fn": 30,
+          "detection_rate": 0.9570200573065902,
+          "roc_auc": 0.997007143792667,
+          "fit_seconds": 24.1
+        }
+      ],
+      "per_class_recall": {
+        "direct_injection": 0.9784004670169294,
+        "jailbreak": 0.8703703703703703,
+        "indirect_injection": 0.8648648648648649
+      },
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 1
+      },
+      "seeds": [
+        42,
+        1337,
+        2024
+      ],
+      "evasion": {
+        "detection_rate": 0.8229020342333905,
+        "detection_rate_sd": 0.001979740657659869,
+        "dr_base64_wrapping": 0.9450811843361987,
+        "dr_base64_wrapping_sd": 0.007788685019245491,
+        "dr_homoglyph": 0.765662362505978,
+        "dr_homoglyph_sd": 0.002438555482349501,
+        "dr_leetspeak": 0.6159732185557151,
+        "dr_leetspeak_sd": 0.006864036391395158,
+        "dr_llm_paraphrase": 0.948905109489051,
+        "dr_llm_paraphrase_sd": 0.021488469261138336,
+        "dr_payload_splitting": 0.9723018147086915,
+        "dr_payload_splitting_sd": 0.0017868468895769042,
+        "dr_position_shift": 0.6475644699140402,
+        "dr_position_shift_sd": 0.025654968516835325,
+        "dr_roleplay_wrapping": 0.882043935052531,
+        "dr_roleplay_wrapping_sd": 0.006442568081772691,
+        "dr_spaced_letters": 0.8662790697674417,
+        "dr_spaced_letters_sd": 0.008222171874262194,
+        "dr_translation_framing": 0.8997134670487106,
+        "dr_translation_framing_sd": 0.003094909598093528,
+        "dr_zero_width": 0.787010506208214,
+        "dr_zero_width_sd": 0.00908610200116543
+      }
+    },
+    "SVM": {
+      "test": {
+        "accuracy": 0.970694087403599,
+        "accuracy_sd": 0.0,
+        "precision": 0.9624819624819625,
+        "precision_sd": 0.0,
+        "recall": 0.9555873925501434,
+        "recall_sd": 1.1102230246251565e-16,
+        "f1": 0.9590222861250899,
+        "f1_sd": 0.0,
+        "fpr": 0.020850040096230954,
+        "fpr_sd": 0.0,
+        "tp": 667.0,
+        "tp_sd": 0.0,
+        "fp": 26.0,
+        "fp_sd": 0.0,
+        "tn": 1221.0,
+        "tn_sd": 0.0,
+        "fn": 31.0,
+        "fn_sd": 0.0,
+        "detection_rate": 0.9555873925501434,
+        "detection_rate_sd": 1.1102230246251565e-16,
+        "roc_auc": 0.9960236946896046,
+        "roc_auc_sd": 0.0,
+        "fit_seconds": 16.066666666666666,
+        "fit_seconds_sd": 0.28674417556808734
+      },
+      "test_per_seed": [
+        {
+          "accuracy": 0.970694087403599,
+          "precision": 0.9624819624819625,
+          "recall": 0.9555873925501432,
+          "f1": 0.9590222861250899,
+          "fpr": 0.020850040096230954,
+          "tp": 667,
+          "fp": 26,
+          "tn": 1221,
+          "fn": 31,
+          "detection_rate": 0.9555873925501432,
+          "roc_auc": 0.9960236946896046,
+          "fit_seconds": 16.4
+        },
+        {
+          "accuracy": 0.970694087403599,
+          "precision": 0.9624819624819625,
+          "recall": 0.9555873925501432,
+          "f1": 0.9590222861250899,
+          "fpr": 0.020850040096230954,
+          "tp": 667,
+          "fp": 26,
+          "tn": 1221,
+          "fn": 31,
+          "detection_rate": 0.9555873925501432,
+          "roc_auc": 0.9960236946896046,
+          "fit_seconds": 16.1
+        },
+        {
+          "accuracy": 0.970694087403599,
+          "precision": 0.9624819624819625,
+          "recall": 0.9555873925501432,
+          "f1": 0.9590222861250899,
+          "fpr": 0.020850040096230954,
+          "tp": 667,
+          "fp": 26,
+          "tn": 1221,
+          "fn": 31,
+          "detection_rate": 0.9555873925501432,
+          "roc_auc": 0.9960236946896046,
+          "fit_seconds": 15.7
+        }
+      ],
+      "per_class_recall": {
+        "direct_injection": 0.9824868651488616,
+        "jailbreak": 0.8888888888888888,
+        "indirect_injection": 0.7027027027027027
+      },
+      "best_params": {
+        "C": 0.25
+      },
+      "seeds": [
+        42,
+        1337,
+        2024
+      ],
+      "evasion": {
+        "detection_rate": 0.917590135788981,
+        "detection_rate_sd": 1.1102230246251565e-16,
+        "dr_base64_wrapping": 1.0,
+        "dr_base64_wrapping_sd": 0.0,
+        "dr_homoglyph": 0.8350071736011477,
+        "dr_homoglyph_sd": 0.0,
+        "dr_leetspeak": 0.8106169296987088,
+        "dr_leetspeak_sd": 0.0,
+        "dr_llm_paraphrase": 0.9197080291970803,
+        "dr_llm_paraphrase_sd": 0.0,
+        "dr_payload_splitting": 0.9756446991404012,
+        "dr_payload_splitting_sd": 0.0,
+        "dr_position_shift": 0.8810888252148997,
+        "dr_position_shift_sd": 0.0,
+        "dr_roleplay_wrapping": 0.9584527220630372,
+        "dr_roleplay_wrapping_sd": 0.0,
+        "dr_spaced_letters": 0.9418604651162791,
+        "dr_spaced_letters_sd": 0.0,
+        "dr_translation_framing": 0.9527220630372493,
+        "dr_translation_framing_sd": 0.0,
+        "dr_zero_width": 0.9025787965616047,
+        "dr_zero_width_sd": 1.1102230246251565e-16
+      }
+    },
+    "DistilBERT": {
+      "checkpoint": "distilbert-base-uncased",
+      "test": {
+        "accuracy": 0.9792630676949443,
+        "accuracy_sd": 0.0015893090823471648,
+        "precision": 0.9700776311274892,
+        "precision_sd": 0.007797307606179846,
+        "recall": 0.9723018147086915,
+        "recall_sd": 0.0037602711910276524,
+        "f1": 0.9711542779967584,
+        "f1_sd": 0.0020525913703745963,
+        "fpr": 0.016840417000801924,
+        "fpr_sd": 0.004536370689248099,
+        "tp": 678.6666666666666,
+        "tp_sd": 2.6246692913372702,
+        "fp": 21.0,
+        "fp_sd": 5.656854249492381,
+        "tn": 1226.0,
+        "tn_sd": 5.656854249492381,
+        "fn": 19.333333333333332,
+        "fn_sd": 2.6246692913372702,
+        "detection_rate": 0.9723018147086915,
+        "detection_rate_sd": 0.0037602711910276524,
+        "roc_auc": 0.99796416844553,
+        "roc_auc_sd": 0.00022296936038813687,
+        "fit_seconds": 826.7999999999998,
+        "fit_seconds_sd": 164.7719838645717,
+        "best_val_loss": 0.06318049720204849,
+        "best_val_loss_sd": 0.0018335852034339771
+      },
+      "test_per_seed": [
+        {
+          "accuracy": 0.9778920308483291,
+          "precision": 0.9645390070921985,
+          "recall": 0.9742120343839542,
+          "f1": 0.9693513898788311,
+          "fpr": 0.020048115477145148,
+          "tp": 680,
+          "fp": 25,
+          "tn": 1222,
+          "fn": 18,
+          "detection_rate": 0.9742120343839542,
+          "roc_auc": 0.9976849883847309,
+          "fit_seconds": 593.9,
+          "best_val_loss": 0.06427079380010346
+        },
+        {
+          "accuracy": 0.9784061696658097,
+          "precision": 0.9645892351274787,
+          "recall": 0.9756446991404012,
+          "f1": 0.9700854700854701,
+          "fpr": 0.020048115477145148,
+          "tp": 681,
+          "fp": 25,
+          "tn": 1222,
+          "fn": 17,
+          "detection_rate": 0.9756446991404012,
+          "roc_auc": 0.9982307107257993,
+          "fit_seconds": 936.7,
+          "best_val_loss": 0.06059782784949042
+        },
+        {
+          "accuracy": 0.9814910025706941,
+          "precision": 0.9811046511627907,
+          "recall": 0.9670487106017192,
+          "f1": 0.974025974025974,
+          "fpr": 0.010425020048115477,
+          "tp": 675,
+          "fp": 13,
+          "tn": 1234,
+          "fn": 23,
+          "detection_rate": 0.9670487106017192,
+          "roc_auc": 0.99797680622606,
+          "fit_seconds": 949.8,
+          "best_val_loss": 0.06467286995655157
+        }
+      ],
+      "per_class_recall": {
+        "direct_injection": 0.9912434325744308,
+        "jailbreak": 0.9518518518518518,
+        "indirect_injection": 0.7297297297297298
+      },
+      "seeds": [
+        42,
+        1337,
+        2024
+      ],
+      "hyperparameters": {
+        "max_len": 256,
+        "batch_size": 32,
+        "lr": 2e-05,
+        "max_epochs": 3,
+        "early_stopping_patience": 1,
+        "device": "mps"
+      },
+      "evasion": {
+        "detection_rate": 0.9665470058789865,
+        "detection_rate_sd": 0.015901884749959357,
+        "dr_base64_wrapping": 0.9770773638968482,
+        "dr_base64_wrapping_sd": 0.032417502862420504,
+        "dr_homoglyph": 0.9942611190817789,
+        "dr_homoglyph_sd": 0.005106206720244523,
+        "dr_leetspeak": 0.9258727881396461,
+        "dr_leetspeak_sd": 0.017388482986798515,
+        "dr_llm_paraphrase": 0.9708029197080292,
+        "dr_llm_paraphrase_sd": 0.01576822554357147,
+        "dr_payload_splitting": 0.9937917860553963,
+        "dr_payload_splitting_sd": 0.002701458571868371,
+        "dr_position_shift": 0.9130850047755491,
+        "dr_position_shift_sd": 0.0067536464296709805,
+        "dr_roleplay_wrapping": 0.9923591212989494,
+        "dr_roleplay_wrapping_sd": 0.009810238101324783,
+        "dr_spaced_letters": 0.9748062015503876,
+        "dr_spaced_letters_sd": 0.010093346248061817,
+        "dr_translation_framing": 0.9546322827125119,
+        "dr_translation_framing_sd": 0.059120450299652225,
+        "dr_zero_width": 0.9723018147086915,
+        "dr_zero_width_sd": 0.0037602711910276524
+      }
+    },
+    "BERT": {
+      "checkpoint": "bert-base-uncased",
+      "test": {
+        "accuracy": 0.9802913453299057,
+        "accuracy_sd": 0.0010564548419826946,
+        "precision": 0.9751076558455062,
+        "precision_sd": 0.006573508323019576,
+        "recall": 0.9699140401146131,
+        "recall_sd": 0.004052187857802609,
+        "f1": 0.9724751196802647,
+        "f1_sd": 0.001330512602780768,
+        "fpr": 0.013900026730820636,
+        "fpr_sd": 0.003836594518686801,
+        "tp": 677.0,
+        "tp_sd": 2.8284271247461903,
+        "fp": 17.333333333333332,
+        "fp_sd": 4.784233364802441,
+        "tn": 1229.6666666666667,
+        "tn_sd": 4.784233364802441,
+        "fn": 21.0,
+        "fn_sd": 2.8284271247461903,
+        "detection_rate": 0.9699140401146131,
+        "detection_rate_sd": 0.004052187857802609,
+        "roc_auc": 0.9982295618366601,
+        "roc_auc_sd": 0.00026390961338014095,
+        "fit_seconds": 1178.1666666666667,
+        "fit_seconds_sd": 154.70792553137744,
+        "best_val_loss": 0.051490963007055114,
+        "best_val_loss_sd": 0.00844327466619833
+      },
+      "test_per_seed": [
+        {
+          "accuracy": 0.9789203084832905,
+          "precision": 0.9659574468085106,
+          "recall": 0.9756446991404012,
+          "f1": 0.9707769066286529,
+          "fpr": 0.019246190858059342,
+          "tp": 681,
+          "fp": 24,
+          "tn": 1223,
+          "fn": 17,
+          "detection_rate": 0.9756446991404012,
+          "roc_auc": 0.9978653639795682,
+          "fit_seconds": 1395.9,
+          "best_val_loss": 0.0633292191873428
+        },
+        {
+          "accuracy": 0.9814910025706941,
+          "precision": 0.9811046511627907,
+          "recall": 0.9670487106017192,
+          "f1": 0.974025974025974,
+          "fpr": 0.010425020048115477,
+          "tp": 675,
+          "fp": 13,
+          "tn": 1234,
+          "fn": 23,
+          "detection_rate": 0.9670487106017192,
+          "roc_auc": 0.9984823174472602,
+          "fit_seconds": 1087.9,
+          "best_val_loss": 0.04692279701508804
+        },
+        {
+          "accuracy": 0.9804627249357326,
+          "precision": 0.9782608695652174,
+          "recall": 0.9670487106017192,
+          "f1": 0.9726224783861671,
+          "fpr": 0.012028869286287089,
+          "tp": 675,
+          "fp": 15,
+          "tn": 1232,
+          "fn": 23,
+          "detection_rate": 0.9670487106017192,
+          "roc_auc": 0.998341004083152,
+          "fit_seconds": 1050.7,
+          "best_val_loss": 0.04422087281873452
+        }
+      ],
+      "per_class_recall": {
+        "direct_injection": 0.989492119089317,
+        "jailbreak": 0.9629629629629629,
+        "indirect_injection": 0.6846846846846847
+      },
+      "seeds": [
+        42,
+        1337,
+        2024
+      ],
+      "hyperparameters": {
+        "max_len": 256,
+        "batch_size": 32,
+        "lr": 2e-05,
+        "max_epochs": 3,
+        "early_stopping_patience": 1,
+        "device": "mps"
+      },
+      "evasion": {
+        "detection_rate": 0.9728422038395506,
+        "detection_rate_sd": 0.010746449094655065,
+        "dr_base64_wrapping": 1.0,
+        "dr_base64_wrapping_sd": 0.0,
+        "dr_homoglyph": 0.9851745576279293,
+        "dr_homoglyph_sd": 0.01793240866499536,
+        "dr_leetspeak": 0.9163079866092779,
+        "dr_leetspeak_sd": 0.026618689717983257,
+        "dr_llm_paraphrase": 0.9489051094890512,
+        "dr_llm_paraphrase_sd": 0.052972119360285244,
+        "dr_payload_splitting": 0.9928366762177651,
+        "dr_payload_splitting_sd": 0.008104375715605112,
+        "dr_position_shift": 0.9422158548233046,
+        "dr_position_shift_sd": 0.040273483557417424,
+        "dr_roleplay_wrapping": 0.991404011461318,
+        "dr_roleplay_wrapping_sd": 0.009284728794280583,
+        "dr_spaced_letters": 0.9781976744186046,
+        "dr_spaced_letters_sd": 0.017722229804430098,
+        "dr_translation_framing": 0.9842406876790831,
+        "dr_translation_framing_sd": 0.014182657502308996,
+        "dr_zero_width": 0.9699140401146131,
+        "dr_zero_width_sd": 0.004052187857802609
+      }
+    },
+    "KeywordFilter": {
+      "test": {
+        "accuracy": 0.757840616966581,
+        "precision": 0.7816377171215881,
+        "recall": 0.4512893982808023,
+        "f1": 0.5722070844686649,
+        "fpr": 0.07056936647955092,
+        "tp": 315,
+        "fp": 88,
+        "tn": 1159,
+        "fn": 383,
+        "detection_rate": 0.4512893982808023,
+        "roc_auc": 0.6903600159006256,
+        "mean_latency_ms": 0.0443
+      },
+      "detector": "keyword filter (lab TRICK_PATTERNS)",
+      "evasion": {
+        "detection_rate": 0.37505852973310444,
+        "dr_base64_wrapping": 1.0,
+        "dr_homoglyph": 0.06456241032998565,
+        "dr_leetspeak": 0.09038737446197992,
+        "dr_llm_paraphrase": 0.45985401459854014,
+        "dr_payload_splitting": 0.44412607449856734,
+        "dr_position_shift": 0.4512893982808023,
+        "dr_roleplay_wrapping": 0.4512893982808023,
+        "dr_spaced_letters": 0.28924418604651164,
+        "dr_translation_framing": 0.4512893982808023,
+        "dr_zero_width": 0.11461318051575932
+      },
+      "per_class_recall": {
+        "direct_injection": 0.44658493870402804,
+        "jailbreak": 0.6333333333333333,
+        "indirect_injection": 0.08108108108108109
+      }
+    },
+    "OffTheShelfDeBERTa": {
+      "test": {
+        "accuracy": 0.9269922879177378,
+        "precision": 0.9744027303754266,
+        "recall": 0.8180515759312321,
+        "f1": 0.8894080996884736,
+        "fpr": 0.012028869286287089,
+        "tp": 571,
+        "fp": 15,
+        "tn": 1232,
+        "fn": 127,
+        "detection_rate": 0.8180515759312321,
+        "roc_auc": 0.9843050254708722,
+        "mean_latency_ms": 98.352
+      },
+      "detector": "protectai/deberta-v3-base-prompt-injection-v2",
+      "id2label": {
+        "0": "SAFE",
+        "1": "INJECTION"
+      },
+      "evasion": {
+        "detection_rate": 0.9255501794911816,
+        "dr_base64_wrapping": 1.0,
+        "dr_homoglyph": 0.9225251076040172,
+        "dr_leetspeak": 0.9067431850789096,
+        "dr_llm_paraphrase": 0.9854014598540146,
+        "dr_payload_splitting": 0.9255014326647565,
+        "dr_position_shift": 0.830945558739255,
+        "dr_roleplay_wrapping": 0.9584527220630372,
+        "dr_spaced_letters": 0.9287790697674418,
+        "dr_translation_framing": 0.8481375358166189,
+        "dr_zero_width": 0.997134670487106
+      },
+      "per_class_recall": {
+        "direct_injection": 0.8546409807355516,
+        "jailbreak": 0.8222222222222222,
+        "indirect_injection": 0.24324324324324326
+      }
+    }
+  },
+  "dataset": {
+    "seed": 42,
+    "dedup": {
+      "initial": 13906,
+      "exact_duplicates_removed": 781,
+      "near_duplicates_removed": 155,
+      "final": 12970
+    },
+    "n_total": 12970,
+    "n_benign": 8314,
+    "n_malicious": 4656,
+    "by_class": [
+      [
+        "benign",
+        8314
+      ],
+      [
+        "direct_injection",
+        3810
+      ],
+      [
+        "jailbreak",
+        596
+      ],
+      [
+        "indirect_injection",
+        250
+      ]
+    ],
+    "by_channel": [
+      [
+        "user",
+        12511
+      ],
+      [
+        "retrieved",
+        459
+      ]
+    ],
+    "by_split": [
+      [
+        "train",
+        9079
+      ],
+      [
+        "val",
+        1946
+      ],
+      [
+        "test",
+        1945
+      ]
+    ],
+    "sources": [
+      "Lakera/gandalf_ignore_instructions",
+      "authored hard negatives",
+      "authored matched-domain benign",
+      "deepset/prompt-injections",
+      "jackhhao/jailbreak-classification",
+      "microsoft/BIPIA",
+      "microsoft/BIPIA (clean context)",
+      "prompt-injection lab (benign probes)",
+      "prompt-injection lab (chat_log.jsonl)",
+      "prompt-injection lab (payloads)",
+      "xTRam1/safe-guard-prompt-injection"
+    ],
+    "triggers_absent_from_benign": [
+      "system prompt"
+    ]
+  },
+  "latency": {
+    "middleware_health": {
+      "detector": "classical:svm",
+      "status": "ok",
+      "thresholds": {
+        "block": 0.9,
+        "escalate": 0.7,
+        "sanitise": 0.5
+      }
+    },
+    "http_latency": {
+      "n": 200,
+      "mean_ms": 3.15,
+      "median_ms": 2.79,
+      "p95_ms": 4.71,
+      "p99_ms": 8.25,
+      "min_ms": 2.23,
+      "max_ms": 15.52
+    },
+    "inprocess_latency": {
+      "keyword": {
+        "detector": "keyword-baseline",
+        "n": 200,
+        "mean_ms": 0.08,
+        "median_ms": 0.03,
+        "p95_ms": 0.41,
+        "batched_mean_ms_per_item": 0.083
+      },
+      "classical": {
+        "detector": "classical:svm",
+        "n": 200,
+        "mean_ms": 1.94,
+        "median_ms": 1.61,
+        "p95_ms": 3.25,
+        "batched_mean_ms_per_item": 0.405
+      },
+      "transformer": {
+        "detector": "transformer:distilbert",
+        "n": 200,
+        "mean_ms": 38.27,
+        "median_ms": 31.51,
+        "p95_ms": 109.91,
+        "batched_mean_ms_per_item": 141.225
+      }
+    },
+    "over_blocking": [
+      {
+        "set": "held-out benign test set",
+        "n": 1247,
+        "decisions": {
+          "allow": 1221,
+          "escalate": 14,
+          "block": 2,
+          "sanitise": 10
+        },
+        "block_rate": 0.0016,
+        "any_intervention_rate": 0.0209,
+        "mean_ms_per_item": 0.604
+      },
+      {
+        "set": "authored hard negatives",
+        "n": 8,
+        "decisions": {
+          "allow": 8
+        },
+        "block_rate": 0.0,
+        "any_intervention_rate": 0.0,
+        "mean_ms_per_item": 0.697
+      },
+      {
+        "set": "authored matched-domain benign",
+        "n": 8,
+        "decisions": {
+          "allow": 8
+        },
+        "block_rate": 0.0,
+        "any_intervention_rate": 0.0,
+        "mean_ms_per_item": 0.574
+      }
+    ]
+  }
+}

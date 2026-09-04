@@ -1,0 +1,20 @@
+trigger,benign_count,malicious_count,benign_rate_pct,malicious_rate_pct,present_in_benign
+instructions,28,1163,0.34,24.98,True
+ignore,17,994,0.2,21.35,True
+confidential,9,618,0.11,13.27,True
+password,14,373,0.17,8.01,True
+disregard,5,315,0.06,6.77,True
+forget,14,250,0.17,5.37,True
+secret,74,201,0.89,4.32,True
+reveal,45,184,0.54,3.95,True
+act as,147,160,1.77,3.44,True
+pretend,50,158,0.6,3.39,True
+repeat,36,98,0.43,2.1,True
+print,71,62,0.85,1.33,True
+show me,6,41,0.07,0.88,True
+translate,43,33,0.52,0.71,True
+access code,9,13,0.11,0.28,True
+encode,3,12,0.04,0.26,True
+base64,1,6,0.01,0.13,True
+role play,2,5,0.02,0.11,True
+system prompt,0,5,0.0,0.11,False
